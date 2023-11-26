@@ -1,0 +1,19 @@
+{
+    "version": "1.0",
+    "manifest_version": 3,
+    "name": "GPT answer Tracker",
+    "author": "Netherium",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://chat.openai.com/c/*"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ]
+}
